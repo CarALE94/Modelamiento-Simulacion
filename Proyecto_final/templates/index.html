@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %} Inicio {% endblock %}
+{% block content %}
+<br>
+<div class="card bg-dark text-white">
+    <img src="{{ url_for('static', filename='boutique.jpg') }}" style="opacity:0.4; filter:alpha(opacity=50); height: 640px;"
+        class="card-img" alt="Boutique Fashion">
+    <div class="card-img-overlay">
+        <center>
+            <br>
+            <h5 class="card-title">Nombre:</h5>
+            <p class="card-text">Mendoza Alcivar Alejandro Javier </p>
+            <h5 class="card-title">Curso:</h5>
+            <p class="card-text">Sexto "A" </p>
+            <h5 class="card-title">Materia:</h5>
+            <p class="card-text">Modelamiento y simulacion</p>
+            <h5 class="card-title">Docente:</h5>
+            <p class="card-text">Ing. Jorge Moya</p>
+        </center>
+        <br><br><br><br><br>
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card text-white bg-secondary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Vision</h5>
+                    <p class="card-text">Ser una empresa lider a nivel municipal y departamental, en el mercado de la moda, a traves
+                        de personal capacitado y mediante el uso de la innovacion en las instalaciones de la empresa para brindar
+                        satisfacion a nuestros clientes con conceptos de moda innovadora mantener actualizadas nuestras
+                        instalaciones y asi llegar a ser la mejor en el servicio, moda y calidad.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card text-white bg-secondary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Mision</h5>
+                    <p class="card-text">Somos una empresa dedicada a la venta de ropa de marca altamente reconocidas importadas y
+                        nacionales con instalaciones innovadoras y modernas, para nuestros clientes que buscan un trato justo con
+                        productos de calidad con un marco de honestidad, responsabilidad, respeto y confinza, transmitida a nuestros
+                        clientes y que a traves de los años a logrado consolidarse en nuestro municipio.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+{% endblock %}
